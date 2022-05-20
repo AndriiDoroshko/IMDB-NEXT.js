@@ -23,8 +23,10 @@ Movie's Page
 More detailed information about the movie and a list of similar movies displayed here.
 It is possible to see the list of actors and the director's team.
  
+![moviePage](https://github.com/AndriiDoroshko/IMDB-NEXT.js/blob/main/assets/moviePage.png)
 
 Structure
+![structure](https://github.com/AndriiDoroshko/IMDB-NEXT.js/blob/main/assets/structure.png)
  
 Main Files
 i18n.ts - In order to keep all the text in one place, a library was used in i18n.
@@ -32,6 +34,8 @@ package.json - All information about the project is stored here
 tsconfig.json - The project uses TypeScript to add strong typing 
 pages - Roaming is stored here and each file is a new page except _app.ts and _document.ts
 src - You can find the body of the entire project in this folder
+
+![src](https://github.com/AndriiDoroshko/IMDB-NEXT.js/blob/main/assets/src.png)
  
 api.js - used to store the main links to the used servers
 color - used to store colors
@@ -48,12 +52,18 @@ action.ts - для отправки данных в хранилище  или �
 movieReducer - storage
 saga.ts - for creating queries and storing the result in storage
 selectors.ts - to pass data from the store to the component
- 
+
+![actions](https://github.com/AndriiDoroshko/IMDB-NEXT.js/blob/main/assets/actions.png)
+
 components - the entire visual part of the site is stored here, fragmented into small parts for reuse
 On this picture is an example of a movie, where all requests for information and changes related to the movie are stored in the movie folder.
+
+![components](https://github.com/AndriiDoroshko/IMDB-NEXT.js/blob/main/assets/components.png)
  
 Component structure example
 index.ts - used to include the required data
 List.tsx - used for visuals and functionality
 styled.ts - used for styling
 type.ts - used to indicate which data types are being used
+
+![ndex.ts](https://github.com/AndriiDoroshko/IMDB-NEXT.js/blob/main/assets/ndex.ts.png)
