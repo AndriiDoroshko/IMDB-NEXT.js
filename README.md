@@ -1,45 +1,59 @@
-**Edit a file, create a new file, and clone from Bitbucket in under 2 minutes**
+MOVIES WEBSITE IN NEXT.JS
+The project is completely written in the Next.js framework using the Redax saga libraries, etc. using SSR.
 
-When you're done, you can delete the content in this README and update the file with details for others getting started with your repository.
+Install
+Just run npm run build && npm run start 
+You can show project in https://moviebakutest.vercel.app/
 
-*We recommend that you open this README in another tab as you perform the tasks below. You can [watch our video](https://youtu.be/0ocf7u76WSo) for a full demo of all the steps in this tutorial. Open the video in a new tab to avoid leaving Bitbucket.*
+Visual Part
+Main page - here is a list of new films. It is also possible to search film by
+By name
+By genre
+By language
+By 18+ (Adult)
+By release date
 
----
+Movie's Card
+Also, when you hover over the eye, more detailed information about the film appears.
+It is possible to click on a genre and a list of films of the selected genre will be displayed.
+Clicking on the movie title opens the movie page.
+![mainPage](https://github.com/shakompk1/themoviedb/blob/main/assets/mainPage.png)
 
-## Edit a file
+Movie's Page
+More detailed information about the movie and a list of similar movies displayed here.
+It is possible to see the list of actors and the director's team.
+ 
 
-You’ll start by editing this README file to learn how to edit a file in Bitbucket.
+Structure
+ 
+Main Files
+i18n.ts - In order to keep all the text in one place, a library was used in i18n.
+package.json - All information about the project is stored here 
+tsconfig.json - The project uses TypeScript to add strong typing 
+pages - Roaming is stored here and each file is a new page except _app.ts and _document.ts
+src - You can find the body of the entire project in this folder
+ 
+api.js - used to store the main links to the used servers
+color - used to store colors
+url - list of links used for requests in the project
+locales - text storage available in russian and english languages
+reqular - to use regular expressions 
+fetch - Requests three functions for GET, POST, DELETE using axios
+helper - auxiliary function storage folder
+typescript - storage of data types involved in the project
 
-1. Click **Source** on the left side.
-2. Click the README.md link from the list of files.
-3. Click the **Edit** button.
-4. Delete the following text: *Delete this line to make a change to the README from Bitbucket.*
-5. After making your change, click **Commit** and then **Commit** again in the dialog. The commit page will open and you’ll see the change you just made.
-6. Go back to the **Source** page.
-
----
-
-## Create a file
-
-Next, you’ll add a new file to this repository.
-
-1. Click the **New file** button at the top of the **Source** page.
-2. Give the file a filename of **contributors.txt**.
-3. Enter your name in the empty file space.
-4. Click **Commit** and then **Commit** again in the dialog.
-5. Go back to the **Source** page.
-
-Before you move on, go ahead and explore the repository. You've already seen the **Source** page, but check out the **Commits**, **Branches**, and **Settings** pages.
-
----
-
-## Clone a repository
-
-Use these steps to clone from SourceTree, our client for using the repository command-line free. Cloning allows you to work on your files locally. If you don't yet have SourceTree, [download and install first](https://www.sourcetreeapp.com/). If you prefer to clone from the command line, see [Clone a repository](https://confluence.atlassian.com/x/4whODQ).
-
-1. You’ll see the clone button under the **Source** heading. Click that button.
-2. Now click **Check out in SourceTree**. You may need to create a SourceTree account or log in.
-3. When you see the **Clone New** dialog in SourceTree, update the destination path and name if you’d like to and then click **Clone**.
-4. Open the directory you just created to see your repository’s files.
-
-Now that you're more familiar with your Bitbucket repository, go ahead and add a new file locally. You can [push your change back to Bitbucket with SourceTree](https://confluence.atlassian.com/x/iqyBMg), or you can [add, commit,](https://confluence.atlassian.com/x/8QhODQ) and [push from the command line](https://confluence.atlassian.com/x/NQ0zDQ).
+store - used to send data to store and change it
+in the picture example movies all requests for information and changes related to the movie are stored in the movie folder
+action.ts - для отправки данных в хранилище  или вызова запроса
+movieReducer - storage
+saga.ts - for creating queries and storing the result in storage
+selectors.ts - to pass data from the store to the component
+ 
+components - the entire visual part of the site is stored here, fragmented into small parts for reuse
+On this picture is an example of a movie, where all requests for information and changes related to the movie are stored in the movie folder.
+ 
+Component structure example
+index.ts - used to include the required data
+List.tsx - used for visuals and functionality
+styled.ts - used for styling
+type.ts - used to indicate which data types are being used
