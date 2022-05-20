@@ -1,4 +1,5 @@
 MOVIES WEBSITE IN NEXT.JS
+
 The project is completely written in the Next.js framework using the Redax saga libraries, etc. using SSR.
 
 Install
