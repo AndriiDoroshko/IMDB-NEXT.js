@@ -26,6 +26,7 @@ It is possible to see the list of actors and the director's team.
 ![moviePage](https://github.com/AndriiDoroshko/IMDB-NEXT.js/blob/main/assets/moviePage.png)
 
 Structure
+
 ![structure](https://github.com/AndriiDoroshko/IMDB-NEXT.js/blob/main/assets/structure.png)
  
 Main Files
@@ -66,4 +67,4 @@ List.tsx - used for visuals and functionality
 styled.ts - used for styling
 type.ts - used to indicate which data types are being used
 
-![ndex.ts](https://github.com/AndriiDoroshko/IMDB-NEXT.js/blob/main/assets/ndex.ts.png)
+![ndex.ts](https://github.com/AndriiDoroshko/IMDB-NEXT.js/blob/main/assets/index.ts.png)
